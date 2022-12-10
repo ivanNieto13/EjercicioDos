@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EjercicioDos</string>
+    <string name="title_activity_main">Ejercicio 2</string>
+    <string name="title_bar">Ejercicio 2 - CRUD</string>
+    <string name="language_english">Ingles</string>
+    <string name="add_student">Agregar nuevo estudiante</string>
+    <string name="open_menu">Abrir</string>
+    <string name="close_menu">Cerrar</string>
+    <string name="student_number">Número de cuenta</string>
+    <string name="student_number_hint">311123654-A</string>
+    <string name="student_name">Nombre</string>
+    <string name="student_last_name">Apellido</string>
+    <string name="student_name_hint">John Doe</string>
+    <string name="student_age">Edad</string>
+    <string name="student_age_hint">18</string>
+</resources>
