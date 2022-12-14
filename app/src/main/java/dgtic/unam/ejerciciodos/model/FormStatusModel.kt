@@ -1,5 +1,5 @@
 package dgtic.unam.ejerciciodos.model
 
 enum class FormStatusModel {
-    ADD, EDIT
+    ADD, VIEW, SEARCH, DELETE
 }

@@ -33,7 +33,7 @@ class FormFragment : Fragment() {
         _binding = FragmentFormBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        binding.btnCalcular.setOnClickListener {
+        binding.btnAddStudent.setOnClickListener {
             //calcular(it)
         }
 

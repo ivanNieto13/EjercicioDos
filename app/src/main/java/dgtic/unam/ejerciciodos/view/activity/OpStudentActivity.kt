@@ -16,6 +16,8 @@ class OpStudentActivity : AppCompatActivity() {
         binding = ActivityAddStudentBinding.inflate(layoutInflater)
         formFragment = FormFragment()
         setContentView(binding.root)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeButtonEnabled(true)
         intent.getStringExtra("formStatus").let {
             when (it?.let { it1 -> FormStatusModel.valueOf(it1) }) {
                 FormStatusModel.ADD -> {
@@ -30,5 +32,10 @@ class OpStudentActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        onBackPressed()
+        return true
     }
 }

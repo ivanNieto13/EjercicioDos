@@ -13,4 +13,9 @@
     <string name="student_name_hint">John Doe</string>
     <string name="student_age">Edad</string>
     <string name="student_age_hint">18</string>
+    <string name="student_assignatures">Materias</string>
+    <string name="student_age_assignature_credits">10</string>
+    <string name="student_assignature_hint">POO</string>
+    <string name="add_assignature_button">Agregar otra materia</string>
+    <string name="assignature_name">Nombre</string>
 </resources>
