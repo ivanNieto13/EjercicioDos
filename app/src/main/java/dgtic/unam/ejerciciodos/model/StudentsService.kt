@@ -6,9 +6,9 @@ import com.android.volley.toolbox.JsonArrayRequest
 import org.json.JSONArray
 import org.json.JSONObject
 
-class StudentsService(private val context: Context) {
+class StudentsService(context: Context) {
     private var volleyAPI: VolleyAPI = VolleyAPI(context)
-    private val ipPuerto = "192.168.1.116:8080"
+    private val ipPuerto = "192.168.1.100:8080"
 
     fun addStudent(student: Student) {
         val urlJSON = "http://$ipPuerto/agregarestudiante"
@@ -60,6 +60,5 @@ class StudentsService(private val context: Context) {
             }
         volleyAPI.add(jsonRequest)
     }
-
 
 }

@@ -11,6 +11,18 @@
                     android:id="@+id/addStudent"
                     android:icon="@drawable/ic_baseline_add"
                     android:title="@string/add_student" />
+                <item
+                    android:id="@+id/getStudents"
+                    android:icon="@drawable/ic_baseline_preview_24"
+                    android:title="@string/preview_students" />
+                <item
+                    android:id="@+id/searchStudent"
+                    android:icon="@drawable/ic_baseline_search_24"
+                    android:title="@string/search_students" />
+                <item
+                    android:id="@+id/deleteStudent"
+                    android:icon="@drawable/ic_baseline_delete_24"
+                    android:title="@string/delete_student" />
             </menu>
         </item>
     </group>

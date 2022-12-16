@@ -15,7 +15,28 @@
         android:theme="@style/Theme.EjercicioDos"
         tools:targetApi="31">
         <activity
-            android:name=".view.activity.OpStudentActivity"
+            android:name=".view.activity.DeleteStudentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.activity.SearchStudentActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.activity.ListStudentsActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".view.activity.AddStudentActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

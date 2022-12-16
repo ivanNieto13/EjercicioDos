@@ -1,29 +1,31 @@
 package dgtic.unam.ejerciciodos.view.activity
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import dgtic.unam.ejerciciodos.databinding.ActivityAddStudentBinding
+import dgtic.unam.ejerciciodos.R
+import dgtic.unam.ejerciciodos.databinding.ActivityListStudentsBinding
+import dgtic.unam.ejerciciodos.databinding.ActivitySearchStudentBinding
 import dgtic.unam.ejerciciodos.model.FormStatusModel
-import dgtic.unam.ejerciciodos.view.fragment.FormFragment
+import dgtic.unam.ejerciciodos.view.fragment.ListStudentsFragment
+import dgtic.unam.ejerciciodos.view.fragment.SearchStudentFragment
 
-class OpStudentActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityAddStudentBinding
-    private lateinit var formFragment: FormFragment
+class SearchStudentActivity : AppCompatActivity() {
+    private lateinit var binding: ActivitySearchStudentBinding
+    private lateinit var searchStudentFragment: SearchStudentFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAddStudentBinding.inflate(layoutInflater)
-        formFragment = FormFragment()
+        binding = ActivitySearchStudentBinding.inflate(layoutInflater)
+        searchStudentFragment = SearchStudentFragment()
         setContentView(binding.root)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
         intent.getStringExtra("formStatus").let {
             when (it?.let { it1 -> FormStatusModel.valueOf(it1) }) {
-                FormStatusModel.ADD -> {
+                FormStatusModel.SEARCH -> {
                     supportFragmentManager
                         .beginTransaction()
-                        .add(binding.flFormFragmentContainer.id, formFragment)
+                        .add(binding.flSearchStudentFragmentContainer.id, searchStudentFragment)
                         .commit()
                 }
                 else -> {

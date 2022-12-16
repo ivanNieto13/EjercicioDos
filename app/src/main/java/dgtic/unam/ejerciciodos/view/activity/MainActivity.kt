@@ -52,8 +52,23 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.addStudent -> {
-                val i = Intent(this, OpStudentActivity::class.java)
+                val i = Intent(this, AddStudentActivity::class.java)
                 i.putExtra("formStatus", FormStatusModel.ADD.name)
+                startActivity(i)
+            }
+            R.id.getStudents -> {
+                val i = Intent(this, ListStudentsActivity::class.java)
+                i.putExtra("formStatus", FormStatusModel.VIEW.name)
+                startActivity(i)
+            }
+            R.id.searchStudent -> {
+                val i = Intent(this, SearchStudentActivity::class.java)
+                i.putExtra("formStatus", FormStatusModel.SEARCH.name)
+                startActivity(i)
+            }
+            R.id.deleteStudent -> {
+                val i = Intent(this, DeleteStudentActivity::class.java)
+                i.putExtra("formStatus", FormStatusModel.DELETE.name)
                 startActivity(i)
             }
         }

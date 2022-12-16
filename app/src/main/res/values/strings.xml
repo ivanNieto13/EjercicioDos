@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">EjercicioDos</string>
     <string name="title_activity_main">Ejercicio 2</string>
-    <string name="title_bar">Ejercicio 2 - CRUD</string>
+    <string name="title_bar">Ejercicio 2 - JSON</string>
     <string name="language_english">Ingles</string>
     <string name="add_student">Agregar nuevo estudiante</string>
+    <string name="preview_students">Ver estudiantes</string>
     <string name="open_menu">Abrir</string>
     <string name="close_menu">Cerrar</string>
     <string name="student_number">Número de cuenta</string>
@@ -18,4 +19,8 @@
     <string name="student_assignature_hint">POO</string>
     <string name="add_assignature_button">Agregar otra materia</string>
     <string name="assignature_name">Nombre</string>
+    <string name="search_students">Buscar estudiante</string>
+    <string name="search_student_hint">A1</string>
+    <string name="buscar">Buscar</string>
+    <string name="delete_student">Borrar estudiante</string>
 </resources>
